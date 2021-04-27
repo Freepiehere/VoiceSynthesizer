@@ -1,0 +1,4 @@
+there is a bug in the saving of progress. when reloading, The start word in one or two agead of the last word saved.
+I have not tested the saved start time at all. Too tired.
+I still have not decided on the best annotation method. What to do with silences confuses me. 
+I have a feeling an AI mechanism should be devices to aim for before the annotation process really begins.

@@ -1,0 +1,7 @@
+eng-to-ipa
+PyPDF2
+librosa
+matplotlib
+scipy
+pydub
+PyQt5
