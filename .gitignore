@@ -2,3 +2,7 @@
 */*.mp3
 */*.pdf
 */*.txt
+
+*.txt
+*.wav
+*.mp3
