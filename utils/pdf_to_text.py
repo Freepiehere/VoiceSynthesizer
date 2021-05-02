@@ -86,14 +86,17 @@ def getWordByIndex(pdfReader,pdf_page,index):
 
 def getPageNumberFromIndex(pdf_parser,word_index):
     page_number=0
+    word_sum=0
     while page_number < pdf_parser.numPages:
         page_lines = pdf_parser.get_page_lines(page_number)
         i=0
         for line in page_lines:
-            for word in line:
-                if i==word_index:
+            words = pdf_parser.split_words_on_line(line)
+            for word in words:
+                if word_sum==word_index:
                     return page_number,i
                 i+=1
+                word_sum+=1
         page_number+=1
 
 def getWordIndexFromPageNumber(pdf_parser,av):
